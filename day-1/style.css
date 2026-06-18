@@ -16,24 +16,3 @@ body{
     width:33.33%;
     float: left;
 }
-@media(max-width:576px){
-    .column{
-        font-size: 14px;
-        background-color: yellow;
-        width: 100%;
-    }
-}
-@media(min-width:576px){
-    .column{
-        font-size: 17px;
-        background-color: aqua;
-        width: 100%;
-    }
-}
-@media (min-width:768px) {
-    .column{
-        background-color: dodgerblue;
-        color: white;
-        width: 100%;
-    }
-}
