@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    height: 200px;
+    width: 400px;
+    border-radius: 8px;
+    color: purple;
+}
