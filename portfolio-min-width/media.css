@@ -1,11 +1,12 @@
+
 .container{
     width: 100%;
     margin: 10px 0px;
-    /* flex-wrap:wrap; */
+    flex-wrap:wrap;
 }
 
 .col-2{
-    width: 50%;
+    width: 100%;
 }
 @media (min-width:576px) {
     .container{
@@ -23,12 +24,16 @@
         width: 100%;
     }
 }
-@media (min-width:992px) {
-    .container{
+@media (min-width: 992px) {
+    .container {
         width: 960px;
     }
-    .col-2{
+    .col-2 {
         width: 50%;
+    }
+    .hero {
+        flex-direction: row;
+        height: 600px;
     }
 }
 @media (min-width:1200px) {

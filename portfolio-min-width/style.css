@@ -1,3 +1,4 @@
+
 *{
     margin: 0px;
     padding: 0px;
@@ -12,7 +13,7 @@ body{
     align-items: center;
 }
 .d-flex{
-    display: flex;   
+    display: flex;
 }
 .flex-column{
     flex-direction: column;
@@ -20,9 +21,6 @@ body{
 .flex-wrap{
     flex-wrap: wrap;
 }
-/* .flex-wrap{
-    flex-wrap: wrap-reverse;
-} */
 
 .justify-content-center{
     justify-content: center;
@@ -80,11 +78,11 @@ a{
     font-size: 18px;
 
 }
-.hero{
-    height: 600px;
-    /* background-color: aqua; */
+.hero {
+    height: auto;
     width: 100%;
+    flex-direction: column-reverse;
 }
 .container .d-flex.justify-content-end {
-    padding-right: 8%;
+    padding-right: 6%;
 }
