@@ -3,14 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+    width: 100%;
+}
 section{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100%;
 }
 div{
     height: 200px;
     width: 400px;
+    border: 1px solid black;
     border-radius: 8px;
-    color: purple;
+    background-color: blueviolet;
 }
+@media (max-width:1400px) {
+    div{
+        background-color: blue;
+    }
+}
+@media
