@@ -4,9 +4,35 @@
     margin: 10px 0px;
     flex-wrap:wrap;
 }
-
+.col-3{
+    width: 100%;
+}
 .col-2{
     width: 100%;
+}
+.col-feature-1{
+    width: 20%;
+}
+.col-feature-2{
+    width: 80%;
+}
+.recent-post-header {
+    justify-content: center ;   
+}
+@media (max-width:576px) {
+       .recent-post-header span{
+        display: none;
+    }
+            .col-feature-1{
+     width: 95%;
+}
+    .col-feature-2{
+   width: 95%;
+}
+.feature-direction{
+flex-direction: column;
+}
+  
 }
 @media (min-width:576px) {
     .container{
@@ -15,6 +41,22 @@
     .col-2{
         width: 100%;
     }
+    .col-3{
+        width: 100%;
+    }
+      .recent-post-header span{
+        display: none;
+    }
+        .col-feature-1{
+     width: 100%;
+}
+    .col-feature-2{
+   width: 100%;
+}
+.feature-direction{
+flex-direction: column;
+}
+    
 }
 @media (min-width:768px) {
     .container{
@@ -23,6 +65,22 @@
     .col-2{
         width: 100%;
     }
+      .col-3 {
+        width: 100%;
+    }
+      .recent-post-header span{
+        display:none;
+    }
+    .col-feature-1{
+     width: 30%;
+}
+    .col-feature-2{
+   width: 70%;
+}
+.feature-direction{
+flex-direction: row;
+}
+ 
 }
 @media (min-width: 992px) {
     .container {
@@ -32,9 +90,31 @@
         width: 50%;
     }
     .hero {
-        flex-direction: row;
-        height: 600px;
+    flex-direction: row;
+    min-height: 600px;
+}
+    .col-3{
+        width: 50%;
     }
+    .recent-post-box{
+        width: 400px;
+    }
+      .recent-post-header span{
+        display: inline;
+    }
+     .recent-post-header {
+    justify-content: space-between;  
+}
+.col-feature-1{
+    width: 20%;
+}
+.col-feature-2{
+    width: 80%;
+}
+.feature-direction{
+flex-direction: row;
+}
+  
 }
 @media (min-width:1200px) {
     .container{
@@ -43,6 +123,25 @@
     .col-2{
         width: 50%;
     }
+     .recent-post-box{
+        width: 400px;
+    }
+      .recent-post-header span{
+        display: inline;
+    }
+     .recent-post-header {
+    justify-content: space-between;  
+}
+.col-feature-1{
+    width: 20%;
+}
+.col-feature-2{
+    width: 80%;
+}
+.feature-direction{
+flex-direction: row;
+}
+  
 }
 @media (min-width:1400px) {
     .container{
@@ -50,5 +149,48 @@
     }
     .col-2{
         width: 50%;
+    }
+     .recent-post-box{
+        width: 400px;
+    }
+    .recent-post-header span{
+        display: inline;
+    }
+    .recent-post-header {
+    justify-content: space-between;  
+}
+.feature-direction{
+flex-direction: row;
+}
+.col-feature-1{
+    width: 20%;
+}
+.col-feature-2{
+    width: 80%;
+}
+  
+}
+/* Recent Posts Cards  */   
+  /* I couldn’t do it myself, so I used AI to help me. because i not attend this lecture  */
+.recent-post > .container > .container.d-flex {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recent-post > .container > .container.d-flex > .col-3 {
+    width: calc(50% - 10px);
+}
+
+.recent-post-box {
+    width: 100%;
+}
+
+.margin-left {
+    margin-left: 0;
+}
+
+@media (max-width: 767px) {
+    .recent-post > .container > .container.d-flex > .col-3 {
+        width: 100%;
     }
 }
