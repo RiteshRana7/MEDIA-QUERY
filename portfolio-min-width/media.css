@@ -32,7 +32,10 @@
 .feature-direction{
 flex-direction: column;
 }
+.featured-textee{
+    text-align: center;
   
+}
 }
 @media (min-width:576px) {
     .container{
