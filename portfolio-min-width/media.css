@@ -36,6 +36,37 @@ flex-direction: column;
     text-align: center;
   
 }
+  .nav .container:first-child {
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+        text-align: right;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 200px;
+        height: 50vh;
+        padding: 20px 10px;
+        gap: 15px;
+        justify-content: flex-start;
+        background: white;
+        box-shadow: 0 0 10px #ccc;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    #menu:checked + .menu-icon + .nav-links {
+        right: 0;
+    }
 }
 @media (min-width:576px) {
     .container{
@@ -83,6 +114,7 @@ flex-direction: column;
 .feature-direction{
 flex-direction: row;
 }
+
  
 }
 @media (min-width: 992px) {
